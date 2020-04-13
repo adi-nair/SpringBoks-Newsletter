@@ -64,7 +64,7 @@ app.post("/failure", function(req,res){
 })
 
 app.listen(process.env.PORT || 3000, function(){
-  console.log("holla bois");
+  console.log("server running successfully");
 })
 
 
