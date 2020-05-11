@@ -33,7 +33,7 @@ app.post("/", function(req, res){
   //creating an object called data and storing the info the way mailchimp will understand
   const jsonData = JSON.stringify(data);
   //mailchimp only understands JSON stingify form
-  const url = "https://us19.api.mailchimp.com/3.0/lists/"+process.env.LIST_ID;
+  const url = "https://"process.env.ZONE".api.mailchimp.com/3.0/lists/"+process.env.LIST_ID;
   const options = {
     method : "POST",
     auth : "adi:"+process.env.API_KEY
